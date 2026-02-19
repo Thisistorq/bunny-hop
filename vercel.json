@@ -2,11 +2,5 @@
   "buildCommand": "next build",
   "devCommand": "next dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "regions": ["lhr1"],
-  "env": {
-    "STRAVA_CLIENT_ID": "@strava_client_id",
-    "STRAVA_CLIENT_SECRET": "@strava_client_secret",
-    "NEXTAUTH_SECRET": "@nextauth_secret"
-  }
+  "framework": "nextjs"
 }
