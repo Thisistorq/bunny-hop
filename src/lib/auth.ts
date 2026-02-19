@@ -48,9 +48,9 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, account, profile }) {
       if (account && profile) {
-        token.accessToken = account.access_token;
-        token.refreshToken = account.refresh_token;
-        token.expiresAt = account.expires_at;
+        token.accessToken = account.access_token || "";
+        token.refreshToken = account.refresh_token || "";
+        token.expiresAt = account.expires_at || 0;
         // @ts-ignore
         token.athleteId = profile.id;
       }
